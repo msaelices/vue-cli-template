@@ -70,7 +70,7 @@ const config = (platform, action) => {
 
     target: NativeScriptVueTarget,
 
-    entry: srcPath + '/main.js',
+    entry: ['babel-polyfill', srcPath + '/main.js'],
 
     output: {
       path: distPath + '/app',
